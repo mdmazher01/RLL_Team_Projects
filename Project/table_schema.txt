@@ -1,0 +1,29 @@
+CREATE TABLE `userdata` (
+  `id` bigint(20) NOT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `balance` int(11) DEFAULT NULL,
+  `depositdate` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `phonenumber` bigint(20) DEFAULT NULL,
+  `recipientname` varchar(255) DEFAULT NULL,
+  `savingbalance` int(11) DEFAULT NULL,
+  `transferamount` int(11) DEFAULT NULL,
+  `transferdate` varchar(255) DEFAULT NULL,
+  `username` varchar(255) DEFAULT NULL,
+  `withdrawamount` int(11) DEFAULT NULL,
+  `withdrawdate` varchar(255) DEFAULT NULL,
+  `accountstatus` int(11) DEFAULT NULL,
+  `chequerequest` varchar(255) DEFAULT NULL,
+  `chequerequeststatus` varchar(255) DEFAULT NULL,
+  `loanamount` bigint(20) DEFAULT NULL,
+  `loanrequest` varchar(255) DEFAULT NULL,
+  `loanstatus` varchar(255) DEFAULT NULL
+)
+
+
+CREATE TABLE `admindata` (
+  `id` bigint(20) NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL
+)
